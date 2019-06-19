@@ -303,3 +303,17 @@ The Android Keystore system lets you store cryptographic keys in a container to 
 [Encryption Helper Library](https://github.com/talhahasanzia/android-encryption-helper)
 
 
+## 6) No use of implicit broadcast/ Use of LocalBroadcastManager
+
+With apps targeting Android O, all implicit BroadcastReceivers registered in the manifest (except these) will stop working.
+
+Use LocalBroadcastManager to register for and send broadcasts of Intents to local objects within your process. This has a number of advantages over sending global broadcasts with sendBroadcast(Intent):
+
+1. You know that the data you are broadcasting won't leave your app, so don't need to worry about leaking private data.
+
+2. It is not possible for other applications to send these broadcasts to your app, so you don't need to worry about having security holes they can exploit.
+
+3. It is more efficient than sending a global broadcast through the system.
+
+
+
