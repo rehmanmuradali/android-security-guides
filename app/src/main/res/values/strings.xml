@@ -4,4 +4,5 @@
     <string name="ssl_pinning">SSL Pinning</string>
     <string name="root_success">Root Detected</string>
     <string name="root_failure">No Root Detected</string>
+    <string name="broadcast_receiver">Broadcast Received</string>
 </resources>
