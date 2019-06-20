@@ -1,7 +1,7 @@
 package com.android.androidsecurity.implementation
 
 import android.util.Log
-import com.android.androidsecurity.Constant
+import com.android.androidsecurity.utils.Constant
 import com.android.androidsecurity.contracts.Point
 import com.android.androidsecurity.utils.TLSSocketFactory
 import okhttp3.CertificatePinner

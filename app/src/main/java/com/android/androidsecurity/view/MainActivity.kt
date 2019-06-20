@@ -1,13 +1,9 @@
 package com.android.androidsecurity.view
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu
-import android.view.MenuItem
+import android.support.v7.app.AppCompatActivity
 import com.android.androidsecurity.R
-import com.android.androidsecurity.implementation.NativeKeyHiding
-
+import com.android.androidsecurity.implementation.EncryptedStorage
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        NativeKeyHiding().explain()
+        EncryptedStorage().explain()
     }
 
 }
