@@ -11,6 +11,8 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.android.androidsecurity.R
+import com.android.androidsecurity.contracts.Point
+import com.android.androidsecurity.factory.PointFactory
 import com.android.androidsecurity.implementation.EncryptedStorage
 import com.android.androidsecurity.implementation.LocalBroadcast
 import com.android.androidsecurity.utils.BroadcastAction
@@ -33,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         setupViews()
         registerBroadcast()
-        LocalBroadcast().explain()
+        val point  = PointFactory.getInstance(PointFactory.LOCAL_BROADCAST)
+        point.explain()
     }
 
     private fun setupViews() {
