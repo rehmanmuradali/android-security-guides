@@ -5,4 +5,6 @@
     <string name="root_success">Root Detected</string>
     <string name="root_failure">No Root Detected</string>
     <string name="broadcast_receiver">Broadcast Received</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login">Login?</string>
 </resources>
