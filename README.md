@@ -1,4 +1,6 @@
-# Is Your App Ready To Live?
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Android%20Security-green.svg?style=flat )]( https://android-arsenal.com/details/1/7727 )
+
+# Is Your App Ready To Get Live?
 
 This repo is created to mention security measures before making your application live
 
