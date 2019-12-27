@@ -17,6 +17,7 @@ This repo is created to mention security measures before making your application
 9) No Encryption Under Https
 10) Add Custom Permissions to protect android components
 11) Disable Stacktrace in Release Mode
+12) Android 10 Security Features (API Level 29)
 
 ## 1) SSL Pinning 
 
@@ -394,6 +395,18 @@ Stack trace will show the full trace right into the core, and will reveal detail
     4) How your objects are referenced internally?
     5) what version and brand of database is behind your front-end?
 
+## 12) Android 10 Security Features (API Level 29)
+
+Updating Android Target Sdk to Android 10 (API Level 29) will automatically make your app secure as some level as it introduces a number of features and behavior changes to better protect users' privacy.    
+
+#### Encryption:
+Current encryption standards require devices have cryptographic acceleration hardware. Because of this requirement many devices are not capable of using storage encryption. Android 10 launch [Adiantum](https://security.googleblog.com/2019/02/introducing-adiantum-encryption-for.html) which is designed to run efficiently without specialized hardware, and can work across everything from smart watches to internet-connected medical devices. Moreover, it has added TLS 1.3 support by default. TLS 1.3 is faster, more secure, and more private.
+            
+#### Authentication
+The underlying framework is updated with robust support for face and fingerprint authentication. The user must perform an action to proceed, such as tap their finger to the fingerprint sensor. If they’re using face or iris to authenticate, then the user must click an additional button to proceed. The explicit flow should be used for all high-value transactions such as payments.
+
+#### Restrictions on starting activities from the background
+Android 10 (API level 29) and higher place restrictions on when apps can start activities when the app is running in the background. These restrictions help minimize interruptions for the user and keep the user more in control of what's shown on their screen.
 
 ## LICENSE
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
